@@ -6,7 +6,6 @@
 body {
     background: #010202;
     font-family: 'Source Sans Pro', sans-serif;
-    padding: 15px;
 }
 
 a {
@@ -14,8 +13,8 @@ a {
 }
 
 .app {
-    background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%),
-        url('../img/cover-image.jpg') no-repeat center right;
+    background: linear-gradient(90deg, #010202 0%, #010202 45%, rgba(1, 2, 2, 0.2) 90%);
+    /* url('../img/cover-image.jpg') no-repeat center right; */
 
     min-height: 100vh;
     color: #e5e5e5;
@@ -29,6 +28,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 20px;
 }
 
 .logo {
@@ -63,6 +63,7 @@ a {
     max-width: 1146px;
     margin: auto;
     padding: 6% 0;
+    margin: 0 20px;
 }
 
 .tags {
@@ -121,17 +122,15 @@ a {
     vertical-align: text-bottom;
 }
 
-@media (max-width: 1200px) {
-    .app {
-        background-size: 50%;
-    }
-}
-
 @media (max-width: 768px) {
     .app {
         height: auto;
         padding-bottom: 350px;
-        background-position: bottom center;
+        background: url('../img/cover-image.jpg') no-repeat bottom center / 300px;
+    }
+
+    video {
+        display: none;
     }
 
     .film {
