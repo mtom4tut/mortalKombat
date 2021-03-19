@@ -122,6 +122,34 @@ a {
     vertical-align: text-bottom;
 }
 
+.contact-form {
+    background: linear-gradient(90deg, #010202 0%, rgba(1, 2, 2, 0.1));
+    color: #e5e5e5;
+}
+
+.h2-form {
+    margin-top: 5px;
+}
+
+.label-email {
+    display: block;
+    margin-bottom: 10px;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.input-email {
+    margin-right: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
 @media (max-width: 768px) {
     .app {
         height: auto;
@@ -151,7 +179,7 @@ a {
     .header {
         padding: 25px 0;
     }
-    
+
     .button-text {
         display: none;
     }

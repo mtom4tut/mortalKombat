@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mortal Kombat премьера фильма 2021</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mortal Kombat премьера фильма 2021</title>
 
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/normalize.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+        />
+        <link rel="stylesheet" href="style/style.css" />
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
-    <script src="js/jquery.vide.min.js" defer></script>
-    <script src="js/script.js" defer></script>
-</head>
-<body>
-    <div id="app" class="app">
-        <header class="header">
-            <a href="/" class="logo">
-                <img src="img/logo.svg" alt="Логотип: КиноПульс" class="logo-img">
-            </a>
-            <a href="#" class="user">
-                <span class="username">Артем</span>
-                <img src="img/avatar.png" alt="Аватар" class="user-img">
-            </a>
-        </header>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+            defer
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"
+            defer
+        ></script>
+        <script src="js/jquery.vide.min.js" defer></script>
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <div id="app" class="app">
+            <header class="header">
+                <a href="/" class="logo">
+                    <img src="img/logo.svg" alt="Логотип: КиноПульс" class="logo-img" />
+                </a>
+                <a href="#" class="user">
+                    <span class="username">Артем</span>
+                    <img src="img/avatar.png" alt="Аватар" class="user-img" />
+                </a>
+            </header>
 
-        <section class="film">
-            <img src="img/film-logo.png" alt="Mortal Kombat" class="film-logo">
-            <div class="tags">
-                <span class="date">2021</span>
-                <span class="genar">боевик, фэнтези, фантастика</span>
-                <span class="country">США</span>
-                <span class="age">18+</span>
+            <section class="film">
+                <img src="img/film-logo.png" alt="Mortal Kombat" class="film-logo" />
+                <div class="tags">
+                    <span class="date">2021</span>
+                    <span class="genar">боевик, фэнтези, фантастика</span>
+                    <span class="country">США</span>
+                    <span class="age">18+</span>
+                </div>
+                <!-- /.tags -->
+                <p class="description">
+                    Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где
+                    останется только сильнейший
+                </p>
+                <div class="bytton-group">
+                    <a data-fancybox data-src="#contact-form" href="javascript:;" class="button button-primary">Предзаказ фильма</a>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=gwsaI9txcXs&t" class="button button-default">
+                        <img src="img/play.svg" alt="icon: play" class="button-icon" />
+                        <span class="button-text">Смотреть трейлер</span>
+                    </a>
+                </div>
+                <!-- /.bytton-group -->
+            </section>
+
+            <!-- modal window -->
+            <div style="display: none;" id="contact-form" class="contact-form">
+                <h2 class="h2-form">Предзаказ фильма</h2>
+                <label class="label-email" for="email">Укажите свою почту:</label>
+                <input id="email" class="input-email" type="email" name="email">
+                <button class="button" type="submit">Отправить</button>
             </div>
-            <!-- /.tags -->
-            <p class="description">
-                Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший
-            </p>
-            <div class="bytton-group">
-                <button class="button button-primary">Предзаказ фильма</button>
-                <button class="button button-default">
-                    <img src="img/play.svg" alt="icon: play" class="button-icon">
-                    <span class="button-text">Смотреть трейлер</span>
-                </button>
-            </div>
-            <!-- /.bytton-group -->
-        </section>
-    </div>
-    
-</body>
+        </div>
+    </body>
 </html>
